@@ -1,0 +1,80 @@
+typical commands to start container
+docker build .
+docker run imagename
+
+As I mentioned during our discussion, I am very pleased to be part of your team and I accept the position of Java J2EE. 
+Thank you again for the opportunity, I am eager to make a posetive contribution to the company and to work with your team 
+and with everyone in KODEI group.
+
+I am Ok with the salary package you propose me. I look forward to start on July 2019. If there is any 
+any additional information or paperwork you need prior, please let me know.
+
+
+//////////////////////////////
+using docker-compose
+docker-compose up 
+== 
+docker run imagename
+///////////////////////////////
+docker build .
+docker run imagename  
+==
+docker-compose up --build
+///////////////////////////////////
+docker run -d redis // to ren on background
+docker stop container_id
+==
+docker-compose up -d
+docker-compose down
+//////////////////////////////////
+docker ps
+=
+docker-compose ps
+
+
+/////////////
+npm run start
+npm run test
+npm run build
+
+////////////
+docker with custom file name
+docker build -f Dockerfile.dev .
+
+docker run -p 3000:3000 imagename
+
+///////////////////////
+docker volume ---set reference to the local file
+instead of taking the snapshot
+
+docker build -f Dockerfile.dev
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 417e5e889ba7
+
+democracy is achieved by balancing power by two opponents, so you need to be vigilance when you give your support. the margin for  is very tight there is 
+
+un awairness is your best enemey fight for that first
+
+you are living with human's they are beautiful and awful that's according how you see things.
+
+If you are lucky you might have artists whom can give you insight about things
+there are also some who tourcher you with their empty mind.
+
+/////////////////test//////////
+docker build -f Dockerfile.dev .
+docker run -it container_id npm run test
+
+live update of the test file 
+1, by attaching the running container we can run the test inside that
+   docker exec -it container_id npm run test
+
+2,  add a new service for the test
+    docker-compose up --build
+
+docker attach container_id
+
+
+////////docker for production//////////////
+create multi step docker builder file
+    docker build .
+    docker run -p 8080:80 b02226972290
+
