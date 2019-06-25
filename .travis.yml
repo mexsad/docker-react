@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t mexdocker/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run mexdocker/docker-react npm run test -- --coverage
