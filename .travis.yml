@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t mexdocker/docker-react -f Dockerfile.dev .
+
+scripts:
+  - docker run mexdocker/docker-react npm run test -- --coverage
