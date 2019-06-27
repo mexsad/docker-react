@@ -78,3 +78,7 @@ create multi step docker builder file
     docker build .
     docker run -p 8080:80 b02226972290
 
+///////////////////////travis push commands////////////
+docker run -e CI=true [tag] npm run test -- --coverage
+or
+docker run [tag] npm run test -- --coverage --watchAll=false
